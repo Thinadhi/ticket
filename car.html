@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Parking Ticket</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            background-color: #f4f4f4;  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            height: 100vh;  
+            margin: 0;  
+        }  
+        .ticket {  
+            border: 2px solid #333;  
+            border-radius: 10px;  
+            padding: 20px;  
+            background-color: white;  
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  
+            text-align: center;  
+            width: 300px;  
+        }  
+        .ticket h2 {  
+            margin: 0;  
+        }  
+        .qr-code {  
+            margin: 20px 0;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="ticket">  
+        <h2>Parking Ticket</h2>  
+        <p><strong>Vehicle Number:</strong> ABC-1234</p>  
+        <p><strong>Slot Number:</strong> 12</p>  
+        <p><strong>Check-in Time:</strong> 10:00 AM</p>  
+        <p><strong>Check-out Time:</strong> -</p>  
+        
+        <div class="qr-code">  
+            <img src="https://api.qrserver.com/v1/create-qr-code/?data=ABC-1234&size=150x150" alt="QR Code">  
+        </div>  
+        <p>Scan the QR Code to open the gate</p>  
+    </div>  
+</body>  
+</html> 
